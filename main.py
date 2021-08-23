@@ -40,7 +40,6 @@ def get_price(title):
     prices_list = []
     for price in prices:
         current_price = price.text.replace('\xa0', '')
-        print(current_price)
         prices_list.append(current_price)
     prices_list.sort()
     return prices_list[round(len(prices_list) / 2)]
